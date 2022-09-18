@@ -1,0 +1,42 @@
+componentes & Propriedades
+    <img src= ""> - os atribitos que a gente pasa pra essa teg são o que define
+    como ela ira se comportar
+
+    Componente - função 
+    function Butto (
+        <button>
+            Enviar
+        </button>
+    )
+    Quando eu crio esse componente button eu posso usar ele como se fosse uma teg html
+    o que muda é eu preciso iniciar com uma com letra Maiuscula
+    
+}
+------------------------
+
+Ex:
+interface ButtonProps{
+    title: string;
+}
+
+function Button(props: ButtonProps){
+    return(
+        <div>
+        <button>
+        {props.title}
+        </button>
+        </div>
+    )
+}
+
+function App(
+    return(
+        <div>
+            <Button title="Send1"/>
+            <Button title="Send2"/>
+        </div>
+    )
+)
+
+
+
